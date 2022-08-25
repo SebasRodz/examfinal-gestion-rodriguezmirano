@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.io.Serializable;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 // -------------------------------------------------------------------------
@@ -13,7 +14,7 @@ import javax.swing.ImageIcon;
  * @author Danielle Bushrow (dbushrow)
  * @version 2010.11.17
  */
-public abstract class ChessGamePiece{
+public abstract class ChessGamePiece implements Serializable {
     private boolean             skipMoveGeneration;
     private int                 pieceColor;
     private ImageIcon           pieceImage;
